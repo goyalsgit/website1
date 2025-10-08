@@ -13,11 +13,7 @@ export default function Signup() {
     console.log("🚀 Form submitted", { name, email, password }); // <-- log form data
 
     try {
-<<<<<<< HEAD
       const res = await fetch("https://website1-mcgw.onrender.com/api/signup", {
-=======
-      const res = await fetch("https://website1-mcgw.onrender.com", {
->>>>>>> d3391ebf80287acea440d1444078fc6ca466021c
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
